@@ -16,14 +16,21 @@ img: 'https://source.unsplash.com/random'
     price: 99,
     img: 'https://source.unsplash.com/random'
      },
+     { 
+    id: 3,
+    category_type: 'food',
+    label: 'apple',
+    price: 99,
+    img: 'https://source.unsplash.com/random'
+     },
 ]
 
 
 
-export default class MyCard extends React.Component {
-  render() {
+export default function myCard() {
+  
     return (
-      <div>
+      <div style={{display: 'flex'}}>
         {good.map((good) => (
           <Card
             style={{ width: 240 }}
@@ -42,5 +49,5 @@ export default class MyCard extends React.Component {
       </div>
     );
   }
-}
+
     
