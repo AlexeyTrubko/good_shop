@@ -1,19 +1,14 @@
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { App } from "./App";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './menu/Menu';
-import MyCard from './card/Card'
-import { BrowserRouter as Router } from 'react-router-dom';
-
-
-
+const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Router>
+  <Provider store={store}>
     <App />
-    <MyCard/>
-  </Router>,
-  document.getElementById('root')
+  </Provider>,
+  rootElement
 );
 
 
