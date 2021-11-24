@@ -1,33 +1,10 @@
 import React from 'react';
 import { Card } from 'antd';
-
-const good = [
-{ 
-id: 1,
-category_type: 'house',
-label: 'Коврик',
-price: 99,
-img: 'https://source.unsplash.com/random'
- },
- { 
-    id: 2,
-    category_type: 'books',
-    label: 'Гарри Поттер 10',
-    price: 99,
-    img: 'https://source.unsplash.com/random'
-     },
-     { 
-    id: 3,
-    category_type: 'food',
-    label: 'apple',
-    price: 99,
-    img: 'https://source.unsplash.com/random'
-     },
-]
+import { good } from '../CategoryData/CategoryData';
 
 
 
-export default function myCard() {
+export default function MyCard()  {
   
     return (
       <div style={{display: 'flex'}}>

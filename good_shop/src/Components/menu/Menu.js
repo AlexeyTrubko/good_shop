@@ -2,12 +2,9 @@ import React from 'react';
 import { Menu } from 'antd';
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
+import { categories } from '../CategoryData/CategoryData';
 
-const categories = [
-  { id: 1, type: 'house', label: 'Дом' },
-  { id: 1, type: 'books', label: 'Книги' },
-  { id: 1, type: 'food', label: 'Еда' },
-];
+
 
 export default function MeMenu() {
  
