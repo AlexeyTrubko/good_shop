@@ -1,11 +1,10 @@
-import MyCard from '../Card/card';
+import { CategoryPage } from "../CategoriesPage";
 import MeMenu from '../menu/Menu';
 
 export const MainPage = () => {
     return (
      <section>
-         <MeMenu />
-         <MyCard />
+         <MeMenu categories = {CategoryPage} />
      </section>
     )
 }
